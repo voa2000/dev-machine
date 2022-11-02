@@ -1,5 +1,4 @@
 # Invoke some automatic plugin installation magic
-# https://gist.github.com/EdwardPrentice/40d630d9776a270f19dfe93b427f1158
 if ARGV[0] != 'plugin'
   required_plugins = ['vagrant-vbguest', 'vagrant-reload']         
   plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
